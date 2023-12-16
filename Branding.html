@@ -914,21 +914,5 @@
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
 
-	<script>
-   function toggleZoom(element) {
-    var imgContainer = element.closest(".embla__slide");
-    if (imgContainer) {
-        var currentTransform = imgContainer.style.transform;
-        var newTransform = (currentTransform === "scale(1.5)" || currentTransform === "") ? "scale(1)" : "scale(1.5)";
-
-        var originalStyles = {
-            transform: currentTransform
-        };
-
-        imgContainer.style.cssText = "transition: transform 0.3s ease-in-out; margin-left: 2rem; 
-	    	margin-right: 2rem;" + originalStyles.transform + newTransform;
-    }
-}
-</script>
   </body>
 </html>
