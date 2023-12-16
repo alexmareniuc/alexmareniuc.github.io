@@ -915,10 +915,17 @@
     <input name="animation" type="hidden">
 
 	<script>
-    function toggleZoom(element) {
+   function toggleZoom(element) {
     var imgContainer = element.closest(".embla__slide");
     if (imgContainer) {
-        imgContainer.style.transform = (imgContainer.style.transform === "scale(1.5)" || imgContainer.style.transform === "") ? "scale(1)" : "scale(1.5)";
+        var currentTransform = imgContainer.style.transform;
+        var newTransform = (currentTransform === "scale(1.5)" || currentTransform === "") ? "scale(1)" : "scale(1.5)";
+
+        var originalStyles = {
+            transform: currentTransform
+        };
+
+        imgContainer.style.cssText = "transition: transform 0.3s ease-in-out;" + originalStyles.transform + newTransform;
     }
 }
 </script>
