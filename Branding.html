@@ -916,9 +916,11 @@
 
 	<script>
     function toggleZoom(element) {
-        var img = element.querySelector("embla__slide");
-        img.style.transform = (img.style.transform === "scale(1.5)" || img.style.transform === "") ? "scale(1)" : "scale(1.5)";
+    var imgContainer = element.closest(".embla__slide");
+    if (imgContainer) {
+        imgContainer.style.transform = (imgContainer.style.transform === "scale(1.5)" || imgContainer.style.transform === "") ? "scale(1)" : "scale(1.5)";
     }
+}
 </script>
   </body>
 </html>
