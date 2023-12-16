@@ -98,7 +98,7 @@
                         <div class="embla__container">
                             
                             <div class="embla__slide slider-image item active" style="margin-left: 2rem; margin-right: 2rem;">
-                                <a href="#">
+                                <a href="#" onclick="toggleZoom(this)">
                                     <div class="slide-content">
                                         <div class="item-img">
                                             <div class="item-wrapper">
@@ -913,5 +913,12 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+
+	<script>
+    function toggleZoom(element) {
+        var img = element.querySelector("img");
+        img.style.transform = (img.style.transform === "scale(1.2)" || img.style.transform === "") ? "scale(1)" : "scale(1.2)";
+    }
+</script>
   </body>
 </html>
