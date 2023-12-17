@@ -16,6 +16,11 @@ img,
 .video-wrapper {
   overflow: hidden;
 }
+
+.header-img {
+display: none;
+}
+
 body {
   font-family: Inter Tight;
 }
