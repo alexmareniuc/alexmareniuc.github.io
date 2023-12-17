@@ -4032,7 +4032,7 @@ a {
   padding: 5rem 1rem;
   max-width: 800px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .cid-tW4nhxCvJm {
     align-items: flex-end;
   }
