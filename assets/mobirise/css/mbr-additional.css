@@ -16,11 +16,6 @@ img,
 .video-wrapper {
   overflow: hidden;
 }
-
-.header-img {
-display: none;
-}
-
 body {
   font-family: Inter Tight;
 }
@@ -4040,6 +4035,9 @@ a {
   .cid-tW4nhxCvJm .row {
     justify-content: center;
   }
+  .cid-tW4nhxCvJm {
+  background-image: url("../../../assets/images/header homepage.png");
+}
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .cid-tW4nhxCvJm .content-wrap {
