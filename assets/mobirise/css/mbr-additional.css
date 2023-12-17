@@ -5323,3 +5323,7 @@ a {
     object-fit: contain;
 }
 }
+
+.align-center {
+  display: flex;
+  justify-content: center;
