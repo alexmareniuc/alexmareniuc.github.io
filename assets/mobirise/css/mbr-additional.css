@@ -417,8 +417,8 @@ body {
 .btn-danger-outline,
 .btn-danger-outline:active {
   background-color: transparent !important;
-  border-color: #fffefe;
-  color: #fffefe;
+  border-color: #fe6146;
+  color: #fe6146;
 }
 .btn-danger-outline:hover,
 .btn-danger-outline:focus,
