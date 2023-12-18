@@ -9,7 +9,7 @@
         "secondaryColor": "#353535",
         "successColor": "#353535",
         "infoColor": "#353535",
-        "warningColor": "#fffefe",
+        "warningColor": "#FE6146",
         "dangerColor": "#fffefe",
         "mainFont": "Inter Tight",
         "display1Font": "Montserrat",
